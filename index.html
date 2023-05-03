@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="modal-btns">
+        <button class="btn btn-1 toggle">Show modal 1</button>
+        <button class="btn btn-2 toggle">Show modal 2</button>
+        <button class="btn btn-3 toggle">Show modal 3</button>
+      </div>
+      <div class="modal-box overlay hidden">
+        <div class="modal ">
+          <span id="close" class="toggle" >&#x2715</span>
+          <h3 class="modal-title">I'm a modal window</h3>
+          <p class="modal-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dicta consequuntur, rerum dolorem odio dignissimos beatae, perspiciatis, impedit iure harum perferendis explicabo iste blanditiis quisquam quasi? Blanditiis vel adipisci impedit.</p>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

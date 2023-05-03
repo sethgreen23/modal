@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --lg-1: #6ece6a;
+  --lg-2: #207d5c;
+  --ff: "Roboto", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  height: 100vh;
+  font-family: var(--ff);
+}
+
+.container {
+  position: relative;
+  height: 100vh;
+  background-image: linear-gradient(90deg, var(--lg-1), var(--lg-2));
+}
+.modal-btns {
+  padding-top: 30px;
+  display: flex;
+  padding-inline: 30px;
+  margin: 0 auto;
+  max-width: 1000px;
+  justify-content: space-between;
+}
+.btn {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 200px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 1.5rem;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  font-family: var(--ff);
+}
+.btn:hover {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.modal-box {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2 ease;
+  opacity: 1;
+  visibility: visible;
+  font-family: var(--ff);
+}
+
+.modal {
+  width: 400px;
+  background: #fff;
+  padding: 40px;
+  position: relative;
+  border-radius: 5px;
+}
+#close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.modal-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.modal-text {
+  line-height: 1.7;
+  font-weight: 500;
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
